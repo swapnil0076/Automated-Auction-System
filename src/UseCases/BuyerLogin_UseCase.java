@@ -2,6 +2,7 @@ package UseCases;
 
 import java.util.Scanner;
 
+import Custom_Colors.Colors;
 import DAO.BuyerDAO;
 import DAO.BuyerDAO_impl;
 import Exception.buyerException;
@@ -31,7 +32,7 @@ buyerLogin();
 		try {
 			String str = bd.BuyerLoginIn(em, pss);
 			
-			System.out.println(str);
+			System.out.println(Colors.GREEN_BACKGROUND+str);
 			flag = true;
 		} catch (buyerException e) {
 			

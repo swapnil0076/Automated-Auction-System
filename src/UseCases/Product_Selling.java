@@ -63,7 +63,6 @@ public class Product_Selling {
 		String str = dsa.SellProduct(list);
 		System.out.println(str);
 	} catch (SellerException e) {
-		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
 		

@@ -51,9 +51,10 @@ public class AddItem_UseCase {
 				
 				SellerDAO sd = new SellerDAO_impl();
 				
-				Seller_Sold_Items sst = new Seller_Sold_Items(catId,sId,name, price);
+//				Seller_Sold_Items sst = new Seller_Sold_Items(price,catId,name, sId);
+				Seller_Sold_Items sst = new Seller_Sold_Items(name, catId, sId, price);
 				
-				
+//				int price, int categoryId,  String productName,int sellerId
 				
 				try {
 					String str = sd.AddProduct(sst);

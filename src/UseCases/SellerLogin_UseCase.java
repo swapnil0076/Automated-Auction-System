@@ -2,6 +2,7 @@ package UseCases;
 
 import java.util.Scanner;
 
+import Custom_Colors.Colors;
 import DAO.BuyerDAO;
 import DAO.BuyerDAO_impl;
 import DAO.SellerDAO;
@@ -35,6 +36,7 @@ public static boolean SellerLogin() {
 			String str = bd.SellerLoginIn(em, pss);
 			
 			System.out.println(str);
+			System.out.println(Colors.BOXING +Colors.GREEN_BACKGROUND+ str);
 			flag = true;
 		} catch (SellerException e) {
 			
