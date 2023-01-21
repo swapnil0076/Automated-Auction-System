@@ -17,8 +17,9 @@ public class OpenMain {
 			Scanner s = new Scanner(System.in);
 			
 			System.out.println("Welcome to the Automated Auction System ");
+			System.out.println();
 			
-			System.out.println( Colors.GREEN_BACKGROUND+Colors.RED+"| Please Chose the Option from Below Tables of LogIn/SignUp |\n"
+			System.out.println( Colors.GREEN_BACKGROUND+Colors.RED_BRIGHT+"| Please Chose the Option from Below Tables of LogIn/SignUp |\n"
 					+ "+----------------------------------------------+\r\n"
 					+ "| Press 1 for Login As Admin                     \n"
 					+ "|Press 2 for Login As Buyer                       \n"
@@ -26,6 +27,7 @@ public class OpenMain {
 					+" |Press 4 for Login As Seller                        \n"
 					+ "|Press 5 for Register As Seller                \n"
 					+ "+----------------------------------------------+\r\n"+Colors.RESET);
+			System.out.println();
 			
 			
 			String number = s.nextLine();
@@ -46,12 +48,21 @@ public class OpenMain {
 							Admin_Main.buyerList();
 						}else if(choose.equals("2")) {
 							Admin_Main.sellerList();
+						}else if(choose.equals("3")) {
+							Admin_Main.dailyselling();
+						}else if(choose.equals("4")) {
+							break;
+						}
+						else {
+							System.out.println("Enter the Correct Input");
 						}
 							
 						
 						
 					}
+					FirstMain();
 				}
+				FirstMain();
 			}
 			else if(number.equals("2")) {
 				Buyer_Main bm = new Buyer_Main();

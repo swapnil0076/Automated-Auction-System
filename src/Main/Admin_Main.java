@@ -4,6 +4,7 @@ package Main;
 
 import Custom_Colors.Colors;
 import UseCases.AdminSignIn_UseCase;
+import UseCases.DailySelling_UseCase;
 import UseCases.ViewAllBuyer_UseCase;
 import UseCases.ViewAllSellers_UseCase;
 
@@ -20,6 +21,9 @@ public class Admin_Main {
 		
 		System.out.println(Colors.PURPLE+"Press 1 to view the Buyer List ");
 		System.out.println(Colors.PURPLE+"Press 2 to view the Seller List ");
+		System.out.println(Colors.PURPLE+"Press 3 to Check the daily Selling List "+Colors.RESET);
+		System.out.println(Colors.PURPLE+"Press 4 Login DashBoard "+Colors.RESET);
+		System.out.println();
 		
 	}
 	
@@ -33,5 +37,11 @@ public class Admin_Main {
 		ViewAllSellers_UseCase vs = new ViewAllSellers_UseCase();
 		vs.viewAllSellers();
 	}
+	
+	public static void dailyselling() {
+		DailySelling_UseCase ds = new DailySelling_UseCase();
+		ds.DailySelling();
+	}
+	
 	
 }
