@@ -14,6 +14,7 @@ import Models.Buyer;
 import Models.BuyerDTO;
 import Models.OrderHistory;
 import Models.SellerDTO;
+import Models.Seller_Sold_Items;
 import Utility.DbUtil;
 
 public class adminDAO_impl  implements AdminDAO{
@@ -108,17 +109,44 @@ public class adminDAO_impl  implements AdminDAO{
 	}
 
 	@Override
-	public List<OrderHistory> DailySellingReport(String Date) throws AdminException {
+	public List<Seller_Sold_Items> DailySellingReport(String Date) throws AdminException {
 		
-		List<OrderHistory> oh = new ArrayList<>();
+		List<Seller_Sold_Items> oh = new ArrayList<>();
 		
 		try(Connection con =DbUtil.provideConnection() ) {
 			
-			con.prepareStatement("select b.buyerId,b.name,b.email,p.productId,p.productName,s.name,s.sellerId,p.price from "
-			+"seller s inner join buyer b inner join product p on p.sellerId = s.sellerId AND p.buyerId = b.buyerId "
-					+"where p.status = 'sold' AND p.date = ?");
+			PreparedStatement ps=con.prepareStatement("select b.buyerId,b.name,b.email,p.productId,p.productName,s.sellername,s.sellerId,p.price from seller s inner join buyer b inner join product p on p.sellerId = s.sellerId AND p.buyerId = b.buyerId where p.status = 'sold' AND p.date = ?");
 			
-		} catch (Exception e) {
+			
+			ps.setString(1, String.valueOf(Date));
+			
+			ResultSet rs = ps.executeQuery();
+			
+			while(rs.next()) {
+				
+				int bid = rs.getInt("buyerId");
+				String sname = rs.getString("sellername");
+				int pid = rs.getInt("productId");
+				String pname = rs.getString("productName");
+				int sid = rs.getInt("SellerId");
+				String em = rs.getString("email");
+				String bname = rs.getString("name");
+				int pr = rs.getInt("price");
+				
+				Seller_Sold_Items ss = new Seller_Sold_Items(pname,sname,bname,em,pr,pid,sid,bid);
+				
+				oh.add(ss);
+				
+			}
+			
+			
+			
+			
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+			System.out.println(e.getMessage());
+			
 			
 		}
 		

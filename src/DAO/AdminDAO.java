@@ -8,6 +8,7 @@ import Models.Buyer;
 import Models.BuyerDTO;
 import Models.OrderHistory;
 import Models.SellerDTO;
+import Models.Seller_Sold_Items;
 
 public interface AdminDAO {
 
@@ -18,6 +19,6 @@ public interface AdminDAO {
 	public String adminLogin(String username,String password) throws CredentialException ;
 	public List<BuyerDTO> viewRegisteredBuyer() throws AdminException;
 	public List<SellerDTO> viewRegisteredSeller() throws AdminException;
-	public List<OrderHistory>DailySellingReport(String Date) throws AdminException;
+	public List<Seller_Sold_Items>DailySellingReport(String Date) throws AdminException;
 	
 }
