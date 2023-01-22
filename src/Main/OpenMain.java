@@ -25,7 +25,7 @@ public class OpenMain {
 					+ "|Press 2 for Login As Buyer                       \n"
 					+ "|Press 3 for Register As Buyer                   \n"
 					+" |Press 4 for Login As Seller                        \n"
-					+ "|Press 5 for Register As Seller                \n"
+					+ "|Press 5 for Register As Seller                    \n"
 					+ "+----------------------------------------------+\r\n"+Colors.RESET);
 			System.out.println();
 			
