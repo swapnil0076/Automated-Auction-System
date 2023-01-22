@@ -20,9 +20,8 @@ Automated Auction System is an Application Software that is used for the buying 
 
 A. View the registered buyer list.<br />
 B. View the registered Seller list.<br />
-C. View the daily dispute report.<br />
-D. View the daily selling report.<br />
-E. Solve the dispute report.<br />
+C. View the daily selling report.<br />
+
 
 
 2. ###### Seller<br />
