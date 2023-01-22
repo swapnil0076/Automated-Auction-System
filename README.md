@@ -1,5 +1,7 @@
 # Automated Auction System
-
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/58816804/213914891-809a90ff-5988-43f6-ae19-e793cfea93ef.png">
+</p>
 
 
 
@@ -43,13 +45,16 @@ C. Select and view all the buyers and also their Items category wise.<br />
 D. Selects Items to buy.<br />
 
 
+<p align="center">
+  <img width="80%" height="80%" src="https://user-images.githubusercontent.com/58816804/213914232-331e6ab2-a1f8-4f95-8360-2a8a2913038b.jpg">
+</p>
 
 
-<img src="https://user-images.githubusercontent.com/58816804/213914232-331e6ab2-a1f8-4f95-8360-2a8a2913038b.jpg" width=80%>
+<p align="center">
+  <img width="80%" height="80%" src="https://user-images.githubusercontent.com/58816804/213914282-b8331752-15a9-4d05-954e-56c55b4133f6.png ">
+</p>
 
 
-
-<img src="https://user-images.githubusercontent.com/58816804/213914282-b8331752-15a9-4d05-954e-56c55b4133f6.png " width=80%>
 
 
 
