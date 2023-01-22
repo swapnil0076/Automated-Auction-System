@@ -88,7 +88,7 @@ public class adminDAO_impl  implements AdminDAO{
 		
 		while(rs.next()) {
 			int r = rs.getInt("sellerId");
-			String n = rs.getString("name");
+			String n = rs.getString("sellername");
 			String e = rs.getString("email");
 			String l = rs.getString("location");
 			

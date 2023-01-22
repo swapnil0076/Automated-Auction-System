@@ -55,7 +55,7 @@ public class SellerDAO_impl implements SellerDAO{
 		
 		try (Connection con = DbUtil.provideConnection()){
 			
-			PreparedStatement ps = con.prepareStatement("insert into seller(name,email,password,location) values(?,?,?,?)");
+			PreparedStatement ps = con.prepareStatement("insert into seller(sellername,email,password,location) values(?,?,?,?)");
 			ps.setString(1, seller.getName());
 			ps.setString(2, seller.getEmail());
 			ps.setString(3, seller.getPassword());
