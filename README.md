@@ -43,6 +43,13 @@ C. Select and view all the buyers and also their Items category wise.<br />
 D. Selects Items to buy.<br />
 
 
-![Beige Colorful Minimal Flowchart Infographic Graph](https://user-images.githubusercontent.com/58816804/213914232-331e6ab2-a1f8-4f95-8360-2a8a2913038b.jpg)
+
+
+<img src="https://user-images.githubusercontent.com/58816804/213914232-331e6ab2-a1f8-4f95-8360-2a8a2913038b.jpg" width=80%>
+
+
+
+<img src="https://user-images.githubusercontent.com/58816804/213914282-b8331752-15a9-4d05-954e-56c55b4133f6.png " width=80%>
+
 
 
